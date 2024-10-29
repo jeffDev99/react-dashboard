@@ -1,0 +1,33 @@
+.authWrapper {
+  min-height: 100vh;
+  padding: 62px 25px;
+  position: relative;
+  width: 100%;
+  background-color: #f7f8f8;
+}
+
+.authBox {
+  @apply h-auto m-auto w-full;
+}
+.authLogo {
+  @apply block w-1/2 mt-0 mx-auto mb-[117px];
+}
+.formWrapper {
+  background-color: #ffffff;
+  height: auto;
+  padding: 35px;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  border-radius: 40px;
+  margin: 20px 0;
+  border: 1px solid #e4e4e4;
+}
+@media screen and (min-width: 948px) {
+  .authWrapper {
+    background-size: 100%;
+  }
+  .authBox {
+    width: 460px;
+  }
+}

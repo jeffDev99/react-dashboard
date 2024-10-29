@@ -1,0 +1,15 @@
+.form{
+    @apply flex flex-col mt-16
+}
+.form input{
+    @apply bg-grey px-4 py-4 rounded-2xl font-300 outline-none
+}
+.form input:focus{
+    @apply border-l-orange-700
+}
+.form p{
+    @apply text-red mt-2 mb-2 
+}
+.form input[type="submit"]{
+    @apply bg-blue font-600 text-xl text-white mt-7 cursor-pointer
+}

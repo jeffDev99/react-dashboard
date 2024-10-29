@@ -1,0 +1,21 @@
+.table {
+  @apply w-full my-4  text-[#282828] min-h-screen  bg-white rounded-30  text-right rounded-t-30 border overflow-x-auto;
+}
+.tableThead ,.tableThead div  {
+  @apply flex  bg-grey;
+}
+
+.tableThead div,
+.tableBody div {
+  @apply min-w-[150px] md:min-w-[200px] ;
+}
+.tableBody {
+  @apply flex justify-between;
+}
+
+.tableBody div:last-child {
+    @apply flex items-center justify-center gap-3
+}
+.tableBody:not(:last-child) {
+  @apply border-b ;
+}

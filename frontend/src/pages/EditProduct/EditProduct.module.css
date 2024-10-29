@@ -1,0 +1,23 @@
+
+/* form */
+.form label{ 
+    @apply block font-500 text-sm mb-2
+  }
+  .form input{
+    @apply bg-grey p-3 rounded-lg w-full outline-none 
+   }
+  
+   .form p{
+    @apply text-red mt-4 mb-4 
+  }
+  .btns{
+    @apply flex font-400 gap-5 mt-10
+  }
+  .form input[type="submit"]{
+    @apply bg-blue text-white 
+  }
+
+  
+  .form input[type="button"]{
+    @apply bg-[#DFDFDF] 
+  }

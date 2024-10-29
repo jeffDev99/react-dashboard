@@ -1,0 +1,6 @@
+.searchResult{
+    @apply absolute w-full top-full mt-2 rounded-2xl border border-semi-dark-gray px-[28px] py-3 shadow-md right-0 bg-white
+}
+.logOut{
+    @apply absolute w-full left-0 right-0 top-full mt-5 rounded-2xl border border-semi-dark-gray px-[28px] py-3 shadow-md right-0 bg-white
+}
