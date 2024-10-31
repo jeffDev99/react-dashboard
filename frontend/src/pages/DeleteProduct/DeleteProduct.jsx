@@ -13,7 +13,7 @@ export default function DeleteProduct({ setShowModal, productInfo }) {
       { data },
       {
         onSuccess: (newData) => {
-          toast.success("محصول با موفقیت حذف شد",{duration:2000});
+          toast.success("محصول با موفقیت حذف شد", { duration: 2000 });
           setTimeout(() => setShowModal(false), 2500);
         },
         onError: (newData) => {
@@ -39,7 +39,7 @@ export default function DeleteProduct({ setShowModal, productInfo }) {
           انصراف
         </button>
       </div>
-      <Toaster/>
+      <Toaster />
     </>
   );
 }

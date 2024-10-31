@@ -27,6 +27,7 @@ export default function CreateProduct({ setShowModal }) {
         mutate(data, {
           onSuccess: (newData) => {
              setShowModal(false)
+            return reset();
           },
           onError: (newData) => {
             console.log(newData);

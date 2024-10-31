@@ -10,10 +10,9 @@ import { deleteCookie } from "../../../utils/config";
 
 export default function TopBar() {
   const [search, setSearch] = useState("");
-  const { data, refetch, error, isError } = useGetMainProduct(search);
+  const { data, refetch } = useGetMainProduct(search);
   const [isShowLogout, setIsShowLogout] = useState(false);
   const navigate = useNavigate();
-  console.log(data.data.data.length);
   const logOutHandler = () => {
     deleteCookie("Token");
     navigate("/");

@@ -14,11 +14,11 @@ export default function Product() {
   const [deleteAlert, setDeleteAlert] = useState(false);
   const [productInfo, setProductInfo] = useState("");
   const [activePage, setActivePage] = useState(1);
-  const { data, refetch } = useGetProducts(5, activePage);
-
+  const [limitPerPage, setLimitPerPage] = useState(5);
+  const { data, refetch } = useGetProducts(limitPerPage, activePage , setActivePage);
   useEffect(() => {
-    refetch();
-  }, [activePage, refetch]);
+    refetch()
+  }, [activePage]);
   return (
     <>
       <div className="flex items-center justify-between">
@@ -89,7 +89,7 @@ export default function Product() {
         <EditProduct showModal={editModal} setShowModal={setEditModal} productInfo={productInfo} />
       </Modal>
       <Alert showAlert={deleteAlert} setShowAlert={setDeleteAlert}>
-        <DeleteProduct setShowModal={setDeleteAlert} productInfo={productInfo} />
+        <DeleteProduct setShowModal={setDeleteAlert} productInfo={productInfo} activePage={activePage} setActivePage={setActivePage} limitPerPage={limitPerPage} />
       </Alert>
     </>
   );
